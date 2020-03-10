@@ -17,7 +17,8 @@ defmodule LiveRedirectBugWeb.Router do
   scope "/", LiveRedirectBugWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    live "/", PageLive
+    live "/other", OtherLive
   end
 
   # Other scopes may use custom stacks.

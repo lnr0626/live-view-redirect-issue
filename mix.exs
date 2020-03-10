@@ -36,6 +36,8 @@ defmodule LiveRedirectBug.MixProject do
       {:phoenix, "~> 1.4.15"},
       {:phoenix_pubsub, "~> 1.1"},
       {:phoenix_ecto, "~> 4.0"},
+      {:phoenix_live_view, "~> 0.9.0"},
+      {:floki, ">= 0.0.0", only: :test},
       {:ecto_sql, "~> 3.1"},
       {:postgrex, ">= 0.0.0"},
       {:phoenix_html, "~> 2.11"},

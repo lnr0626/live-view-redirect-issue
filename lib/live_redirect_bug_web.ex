@@ -22,6 +22,7 @@ defmodule LiveRedirectBugWeb do
       use Phoenix.Controller, namespace: LiveRedirectBugWeb
 
       import Plug.Conn
+      import Phoenix.LiveView.Controller
       import LiveRedirectBugWeb.Gettext
       alias LiveRedirectBugWeb.Router.Helpers, as: Routes
     end
@@ -39,6 +40,7 @@ defmodule LiveRedirectBugWeb do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
+      import Phoenix.LiveView.Helpers
       import LiveRedirectBugWeb.ErrorHelpers
       import LiveRedirectBugWeb.Gettext
       alias LiveRedirectBugWeb.Router.Helpers, as: Routes
@@ -50,6 +52,7 @@ defmodule LiveRedirectBugWeb do
       use Phoenix.Router
       import Plug.Conn
       import Phoenix.Controller
+      import Phoenix.LiveView.Router
     end
   end
 
